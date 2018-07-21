@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://devpost.com/software/reviewchecker -->
+<html lang="en" class=" js flexbox canvas canvastext no-touch postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache filereader" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" itemscope="itemscope" itemtype="http://schema.org/SoftwareApplication" style=""><!--<![endif]--><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# challengepost: http://ogp.me/ns/fb/challengepost#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script src="./ReviewChecker _ Devpost_files/nr-1071.min.js.download"></script><script type="text/javascript" async="" src="./ReviewChecker _ Devpost_files/ga.js.download"></script><script type="text/javascript" async="" src="./ReviewChecker _ Devpost_files/mixpanel-2.2.min.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f9082fa052","applicationID":"7341974","transactionName":"IQpdERFeXFVVRhpbCw8AHBYMV0ROUUZQQEsRDVwS","queueTime":1,"applicationTime":104,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width">
+    <title>ReviewChecker | Devpost</title>
+
+    <meta name="description" content="ReviewChecker - A website that leverages machine learning to determine whether a review on Google Maps is real or not">
+<meta property="fb:app_id" content="115745995110194">
+<meta property="og:title" content="ReviewChecker">
+<meta property="og:description" content="A website that leverages machine learning to determine whether a review on Google Maps is real or not">
+<meta property="og:type" content="challengepost:app">
+<meta property="og:site_name" content="Devpost">
+<meta property="og:image" content="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/649/184/datas/medium.jpg">
+<meta property="og:url" content="http://devpost.com/software/reviewchecker">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Devpost">
+<meta name="twitter:title" content="ReviewChecker">
+<meta name="twitter:description" content="A website that leverages machine learning to determine whether a review on Google Maps is real or not">
+<meta name="twitter:image" content="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/649/184/datas/medium.jpg">
+<meta name="twitter:domain" content="devpost.com">
+<meta name="twitter:url" content="http://devpost.com/software/reviewchecker">
+<meta itemprop="name" content="ReviewChecker">
+<meta itemprop="description" content="A website that leverages machine learning to determine whether a review on Google Maps is real or not">
+<meta itemprop="image" content="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/649/184/datas/medium.jpg">
+<meta itemprop="screenshot" content="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/649/184/datas/medium.jpg">
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="kgHZgu4W1UIicmnKrkEfAWhx+2156tcDWTeI6ylPD4Tlo3bZAJBnCds1pfmVnwIswANbPsUmC61iO4f0APLCXQ==">
+    
+
+    <!--[if gt IE 7]><!-->
+    <link rel="stylesheet" media="screen" href="./ReviewChecker _ Devpost_files/reimagine2-9d72ac2065a06eaf7a13aba4ddce1fb4.css">
+    <link rel="stylesheet" media="screen" href="./ReviewChecker _ Devpost_files/home_application-56b2aecd0dd6e2b342d71aec535383b1.css">
+    
+    <script src="./ReviewChecker _ Devpost_files/modernizr-bef57869320b416d48fb2c5087d5e793.js.download"></script>
+    <!--<![endif]-->
+
+    <link href="https://plus.google.com/100989403125217127946" rel="publisher">
+  <meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><style></style><style type="text/css"></style></head>
+
+  <body id="body-softwares" class="foundation-grid action-show controller-softwares engine-home placeholder">
+    
+
+    <!--googleoff: anchor-->
+
+<!--[if lte IE 9 ]>
+  <div id="unsupported_browser_version" class="persistent_message alert-box alert">
+    <p>
+      We've detected that you are using an unsupported browser.  Please
+      <a href="http://browsehappy.com/">upgrade your browser</a>
+      to Internet Explorer 10 or higher.
+    </p>
+  </div>
+<![endif]-->
+
+
+<!--googleon: anchor-->
+
+
+
+    
+    
+    
+  
+<header id="global-nav">
+  <div class="contain-to-grid hide-for-large-up">
+  <nav class="top-bar" data-topbar="">
+    <ul class="title-area top-bar-section">
+      <li class="name">
+        <span id="logo">
+  <a href="http://devpost.com/">
+    <img alt="Devpost" src="./ReviewChecker _ Devpost_files/devpost-icon-900856edde1e4a510a65f29a1bde7a2b.svg">
+</a></span>
+
+      </li>
+
+      
+      <li class="menu left">
+  <ul>
+    <li>
+  <a class="main-link" data-role="jobs" href="http://devpost.com/jobs">
+    Jobs
+</a></li>
+
+<li>
+  <a class="main-link" data-role="discover" href="http://devpost.com/hackathons">
+    Hackathons
+</a></li>
+
+  </ul>
+</li>
+
+        <li class="right">
+    <ul class="right logged-out">
+  <li><a href="https://secure.devpost.com/users/login?ref=top-nav-login">Log in</a></li>
+  <li class="show-for-medium-up">
+    <a id="signup-link" href="https://secure.devpost.com/users/register?ref_content=signup_global_nav&amp;ref_feature=signup&amp;ref_medium=button">
+      <span class="inner-button">
+        Sign up
+      </span>
+</a>  </li>
+</ul>
+
+  </li>
+
+    </ul>
+
+    
+  <section class="top-bar-section">
+      
+    </section></nav>
+</div>
+
+  <div class="contain-to-grid hide-for-small hide-for-medium">
+  <nav class="top-bar" data-topbar="">
+    <ul class="title-area">
+      <li class="name">
+        <span id="logo">
+  <a href="http://devpost.com/">
+    <img alt="Devpost" src="./ReviewChecker _ Devpost_files/devpost-logo-646bdf6ac6663230947a952f8d354cad.svg">
+</a></span>
+
+      </li>
+    </ul>
+
+    
+  <section class="top-bar-section">
+      <ul class="left">
+  <li>
+  <a class="main-link" data-role="jobs" href="http://devpost.com/jobs">
+    Jobs
+</a></li>
+
+<li>
+  <a class="main-link" data-role="discover" href="http://devpost.com/hackathons">
+    Hackathons
+</a></li>
+
+</ul>
+
+        <ul class="right logged-out">
+  <li><a href="https://secure.devpost.com/users/login?ref=top-nav-login">Log in</a></li>
+  <li class="show-for-medium-up">
+    <a id="signup-link" href="https://secure.devpost.com/users/register?ref_content=signup_global_nav&amp;ref_feature=signup&amp;ref_medium=button">
+      <span class="inner-button">
+        Sign up
+      </span>
+</a>  </li>
+</ul>
+
+
+    </section></nav>
+</div>
+
+</header>
+
+
+
+
+
+    <section id="container">
+        <header class="page-header text-center" id="software-header">
+
+  <div class="row">
+    <div class="small-12 columns">
+      
+      <h1 id="app-title">ReviewChecker</h1>
+
+        <p class="large">
+    A website that leverages machine learning to determine whether a review on Google Maps is real or not
+  </p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="software-likes">
+  <div data-like="base">
+    <a class="like-button button radius secondary" href="https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=180188&amp;flow%5Bname%5D=like_software&amp;return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Freviewchecker">
+  <span class="ss-icon ss-heart"></span>
+  Like
+</a>
+</div>
+
+</div>
+
+      <a id="software-comment-button" class="button radius comment-button" href="https://devpost.com/software/reviewchecker#updates">
+  <span class="ss-icon ss-quote"></span>
+  Comment
+</a>
+
+    </div>
+  </div>
+</header>
+
+  
+<nav id="software-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <ul class="left no-bullet">
+        <li>
+          <h4>
+            <a class="active" href="https://devpost.com/software/reviewchecker">Story</a>
+          </h4>
+        </li>
+        <li>
+          <h4>
+            <a href="https://devpost.com/software/reviewchecker#updates">Updates</a>
+          </h4>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      
+  
+
+
+
+<article id="app-details" class="content-section">
+  <div class="row">
+    <div class="large-9 columns" id="app-details-left">
+      
+    <div id="gallery">
+      <div class="orbit-container"><ul data-orbit="true" data-options="animation_speed:0;slide_number:false;timer:false" class="no-bullet orbit-slides-container" style="height: 514px;">
+
+          <li class="text-center active">
+    <img alt="ReviewChecker – screenshot 1" class="software_photo_image image-replacement" onerror="this.onerror=null;this.src=&#39;https://devpost-challengepost.netdna-ssl.com/assets/defaults/thumbnail-placeholder-42bcab8d8178b413922ae2877d8b0868.gif&#39;;" src="./ReviewChecker _ Devpost_files/gallery.jpg">
+    <p>
+      <i></i>
+    </p>
+</li>  <li class="text-center">
+    <img alt="ReviewChecker – screenshot 2" class="software_photo_image image-replacement" onerror="this.onerror=null;this.src=&#39;https://devpost-challengepost.netdna-ssl.com/assets/defaults/thumbnail-placeholder-42bcab8d8178b413922ae2877d8b0868.gif&#39;;" src="./ReviewChecker _ Devpost_files/gallery(1).jpg">
+    <p>
+      <i></i>
+    </p>
+</li>
+</ul><a href="https://devpost.com/software/reviewchecker#" class="orbit-prev"><span></span></a><a href="https://devpost.com/software/reviewchecker#" class="orbit-next"><span></span></a><ol class="orbit-bullets"><li data-orbit-slide="0" class="active"></li><li data-orbit-slide="1"></li></ol></div>    </div>
+
+
+
+      <div>
+  <h2>Inspiration</h2>
+
+<h2>What it does</h2>
+
+<p>This website allows users to search for locations on google maps and check whether the reviews are real or not. It does this by running the reviews against a machine learning classifier, which outputs the polarity (i.e. real or fake) and the percent accuracy of that.</p>
+
+<h2>How we built it</h2>
+
+<p>The architecture of the website is a REST API that is consumed by a Javascript frontend. The backend REST API was made using Flask, and the machine learning model was trained using Keras. The dataset used to train this model was taken from an open-sourced dataset from Cornell University. The API is hosted using a Heroku cloud instance. The frontend was made using Javascript, CSS/Bootstrap, HTML, and a google maps widget. To make a search, the API endpoint is hit with a POST request with the PlaceID of the location (taken from the maps widget). The API then does a get request to the Google Places API, grabs the review data, and runs it against the trained model and makes a prediction. The accuracy of the prediction is then appended to the data taken from the Places API and is sent back to the frontend as a JSON response. The frontend then displays this data to the user. </p>
+
+<h2>Challenges we ran into</h2>
+
+<p>Figuring out the architecture/software stack of the system was a bit of a challenge, especially given everyone's different coding backgrounds. Getting ourselves organized and getting everyone on the same page was also a challenge. </p>
+
+<h2>Accomplishments that we're proud of</h2>
+
+<p>We got it done!</p>
+
+<h2>What we learned</h2>
+
+<p>How to use Google Maps/Places APIs, re-learning how to host on heroku, libraries/frameworks like Bootstrap &amp; Flask. </p>
+
+<h2>What's next for ReviewChecker</h2>
+
+<p>Larger dataset for more accurate predictions, a mobile (Android/iOS) instance of website.</p>
+
+</div>
+
+        <div id="built-with" class="">
+    <h2>Built With</h2>
+
+    <ul class="no-bullet inline-list"><li><span class="cp-tag">keras</span></li><li><span class="cp-tag recognized-tag"><a href="https://devpost.com/software/built-with/python">python</a></span></li><li><span class="cp-tag recognized-tag"><a href="https://devpost.com/software/built-with/javascript">javascript</a></span></li><li><span class="cp-tag recognized-tag"><a href="https://devpost.com/software/built-with/heroku">heroku</a></span></li></ul>
+  </div>
+
+        <nav class="app-links section">
+    <h2>Try it out</h2>
+
+    <ul data-role="software-urls" class="no-bullet">
+        <li><a target="_blank" title="https://github.com/benjamintli/tohacks2018_backend" rel="nofollow" href="https://github.com/benjamintli/tohacks2018_backend">
+  <i class="ss-icon ss-social ss-octocat"></i>
+  <span>GitHub Repo</span>
+</a></li>
+    </ul>
+  </nav>
+
+    </div>
+
+    <aside class="large-3 columns" id="app-details-right">
+
+        <div id="submissions" class="section">
+    <h4 class="clearfix">
+      Submitted to
+    </h4>
+
+    <ul class="software-list-with-thumbnail">
+        <li>
+    <figure class="software-list-thumbnail challenge_avatar">
+      <a href="https://tohacks2018.devpost.com/"><img alt="image" class="thumbnail_image image-replacement" onerror="this.onerror=null;this.src=&#39;https://devpost-challengepost.netdna-ssl.com/assets/defaults/no-avatar-100-17cf519ce6f8e4e0e83758ea09fc5eb3.png&#39;;" src="./ReviewChecker _ Devpost_files/medium.jpg"></a>
+    </figure>
+
+    <div class="software-list-content">
+      <p>
+        <a href="https://tohacks2018.devpost.com/">TOHacks 2018</a>
+      </p>
+
+
+    </div>
+
+
+  </li>
+
+    </ul>
+  </div>
+
+      <section id="app-team">
+  <h4 class="clearfix">
+    Created by
+  </h4>
+
+  <ul class="no-bullet">
+    
+<li class="software-team-member" itemprop="member">
+      <div class="bubble">
+      <p>I worked on finding a training dataset and putting it into a useable format. I also helped develop the frontend of the website. </p>
+    </div>
+
+  <div class="row">
+    <div class="small-2 large-4 columns">
+      <figure>
+        <a class="user-profile-link" href="https://devpost.com/LeviStringer"><img alt="LeviStringer" class="software-member-photo user-photo facebook_avatar_image image-replacement" title="LeviStringer" onerror="this.onerror=null;this.src=&#39;https://devpost-challengepost.netdna-ssl.com/assets/defaults/no-avatar-100-17cf519ce6f8e4e0e83758ea09fc5eb3.png&#39;;" src="./ReviewChecker _ Devpost_files/no-avatar-100-17cf519ce6f8e4e0e83758ea09fc5eb3.png"></a>
+      </figure>
+    </div>
+
+    <div class="small-10 large-8 columns">
+      <a class="user-profile-link" href="https://devpost.com/LeviStringer">Levi Stringer</a>
+      <span class="follow-button-wrapper rendered" data-context="software-detail" data-layout="condensed" data-followed-id="906618"><div class="follow-actions follow-actions-condensed">
+  <form accept-charset="UTF-8" action="https://secure.devpost.com/users/register" method="get">
+
+    <div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+
+    <input id="flow_name" name="flow[name]" type="hidden" value="follow_user">
+    <input id="flow_data_followed_id" name="flow[data][followed_id]" type="hidden" value="906618">
+    <input id="flow_data_context" name="flow[data][context]" type="hidden" value="software-detail">
+
+    <button class="button follow-btn radius tiny">
+      <span class="follow-text">
+        <i class="ss-icon ss-plus"></i>
+        
+      </span>
+    </button>
+  </form>
+</div>
+</span>
+      <br>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="software-team-member" itemprop="member">
+  
+  <div class="row">
+    <div class="small-2 large-4 columns">
+      <figure>
+        <a class="user-profile-link" href="https://devpost.com/benjamintli"><img alt="benjamintli" class="software-member-photo user-photo photo_image image-replacement" title="benjamintli" onerror="this.onerror=null;this.src=&#39;https://devpost-challengepost.netdna-ssl.com/assets/defaults/no-avatar-100-17cf519ce6f8e4e0e83758ea09fc5eb3.png&#39;;" src="./ReviewChecker _ Devpost_files/profile.jpg"></a>
+      </figure>
+    </div>
+
+    <div class="small-10 large-8 columns">
+      <a class="user-profile-link" href="https://devpost.com/benjamintli">Benjamin Li</a>
+      <span class="follow-button-wrapper rendered" data-context="software-detail" data-layout="condensed" data-followed-id="728971"><div class="follow-actions follow-actions-condensed">
+  <form accept-charset="UTF-8" action="https://secure.devpost.com/users/register" method="get">
+
+    <div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+
+    <input id="flow_name" name="flow[name]" type="hidden" value="follow_user">
+    <input id="flow_data_followed_id" name="flow[data][followed_id]" type="hidden" value="728971">
+    <input id="flow_data_context" name="flow[data][context]" type="hidden" value="software-detail">
+
+    <button class="button follow-btn radius tiny">
+      <span class="follow-text">
+        <i class="ss-icon ss-plus"></i>
+        
+      </span>
+    </button>
+  </form>
+</div>
+</span>
+      <br>
+      <small>b.li@queensu.ca</small>
+    </div>
+  </div>
+</li>
+
+<li class="software-team-member" itemprop="member">
+  
+  <div class="row">
+    <div class="small-2 large-4 columns">
+      <figure>
+        <a class="user-profile-link" href="https://devpost.com/JonathanStroz"><img alt="JonathanStroz" class="software-member-photo user-photo facebook_avatar_image image-replacement" title="JonathanStroz" onerror="this.onerror=null;this.src=&#39;https://devpost-challengepost.netdna-ssl.com/assets/defaults/no-avatar-100-17cf519ce6f8e4e0e83758ea09fc5eb3.png&#39;;" src="./ReviewChecker _ Devpost_files/no-avatar-100-17cf519ce6f8e4e0e83758ea09fc5eb3.png"></a>
+      </figure>
+    </div>
+
+    <div class="small-10 large-8 columns">
+      <a class="user-profile-link" href="https://devpost.com/JonathanStroz">Jonathan Stroz</a>
+      <span class="follow-button-wrapper rendered" data-context="software-detail" data-layout="condensed" data-followed-id="906626"><div class="follow-actions follow-actions-condensed">
+  <form accept-charset="UTF-8" action="https://secure.devpost.com/users/register" method="get">
+
+    <div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+
+    <input id="flow_name" name="flow[name]" type="hidden" value="follow_user">
+    <input id="flow_data_followed_id" name="flow[data][followed_id]" type="hidden" value="906626">
+    <input id="flow_data_context" name="flow[data][context]" type="hidden" value="software-detail">
+
+    <button class="button follow-btn radius tiny">
+      <span class="follow-text">
+        <i class="ss-icon ss-plus"></i>
+        
+      </span>
+    </button>
+  </form>
+</div>
+</span>
+      <br>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="software-team-member" itemprop="member">
+  
+  <div class="row">
+    <div class="small-2 large-4 columns">
+      <figure>
+        <a class="user-profile-link" href="https://devpost.com/DanielLok"><img alt="DanielLok" class="software-member-photo user-photo facebook_avatar_image image-replacement" title="DanielLok" onerror="this.onerror=null;this.src=&#39;https://devpost-challengepost.netdna-ssl.com/assets/defaults/no-avatar-100-17cf519ce6f8e4e0e83758ea09fc5eb3.png&#39;;" src="./ReviewChecker _ Devpost_files/no-avatar-100-17cf519ce6f8e4e0e83758ea09fc5eb3.png"></a>
+      </figure>
+    </div>
+
+    <div class="small-10 large-8 columns">
+      <a class="user-profile-link" href="https://devpost.com/DanielLok">Daniel Lok</a>
+      <span class="follow-button-wrapper rendered" data-context="software-detail" data-layout="condensed" data-followed-id="906623"><div class="follow-actions follow-actions-condensed">
+  <form accept-charset="UTF-8" action="https://secure.devpost.com/users/register" method="get">
+
+    <div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+
+    <input id="flow_name" name="flow[name]" type="hidden" value="follow_user">
+    <input id="flow_data_followed_id" name="flow[data][followed_id]" type="hidden" value="906623">
+    <input id="flow_data_context" name="flow[data][context]" type="hidden" value="software-detail">
+
+    <button class="button follow-btn radius tiny">
+      <span class="follow-text">
+        <i class="ss-icon ss-plus"></i>
+        
+      </span>
+    </button>
+  </form>
+</div>
+</span>
+      <br>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+  </ul>
+
+</section>
+
+
+      
+      
+    </aside>
+  </div>
+</article>
+
+<section id="share-and-like">
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="clearfix">
+        <div class="left">
+          <div class="software-likes">
+  <div data-like="base">
+    <a class="like-button button radius secondary" href="https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=180188&amp;flow%5Bname%5D=like_software&amp;return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Freviewchecker">
+  <span class="ss-icon ss-heart"></span>
+  Like
+</a>
+</div>
+
+
+  <span class="like-counts">
+    
+  </span>
+
+  <ul class="like-users inline-list">
+  </ul>
+
+</div>
+
+        </div>
+        <div class="right hide-for-small">
+          
+<div id="software-share">
+  Share this project:
+  
+
+
+  <ul class="h-nav clearfix inline-list" id="social-links">
+    <li id="promote-twitter">
+      
+<div class="social-icon">
+  <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://devpost.com/software/reviewchecker?utm_campaign=portfolio-share&amp;utm_medium=twitter&amp;utm_source=cp" addthis:title="Check out ReviewChecker" addthis:description="http://devpost.com/software/reviewchecker">
+    <a class="addthis_button_twitter" tw:count="false" tw:counturl="http://devpost.com/software/reviewchecker" tw:url="http://devpost.com/software/reviewchecker?utm_campaign=portfolio-share&amp;utm_medium=twitter&amp;utm_source=cp" tw:via="Devpost" tw:text="Check out ReviewChecker">
+    </a>
+  </div>
+</div>
+
+    </li>
+
+    <li id="promote-fb-li">
+      
+<div class="social-icon">
+  <div class="addthis_32x32_style addthis_toolbox addthis_default_style" addthis:url="http://devpost.com/software/reviewchecker" addthis:title="ReviewChecker" addthis:description="">
+    <div class="custom_images">
+      <a class="addthis_button_facebook" fb:like:show_faces="false">
+      </a>
+    </div>
+  </div>
+</div>
+
+    </li>
+
+    <li id="promote-reddit-li">
+      <div class="social-icon">
+  <a class="addthis_button_reddit addthis_32x32_style" addthis:url="http://devpost.com/software/reviewchecker?utm_campaign=portfolio-share&amp;utm_medium=reddit&amp;utm_source=cp" addthis:title="ReviewChecker"></a>
+</div>
+
+    </li>
+</ul>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="hackathon-picker" class="reveal-modal small" data-reveal="" data-hackathon-picker="">
+  <a class="close-reveal-modal close-reveal-modal-x">×</a>
+  <div data-region="hackathon-picker-content"></div>
+</div>
+
+
+
+<article class="content-section">
+  <div class="row">
+    <div class="large-12 columns software-updates">
+      <h2 id="updates">Updates</h2>
+
+      <article class="content-section software-update with-sidebar" data-commentable-id="144164">
+  <div class="row">
+    <div class="large-8 small-12 columns">
+      <div data-region="actions"><div class="update-dropdown right">
+</div></div>
+
+      <div class="body">
+        <p class="author">
+          <a class="user-profile-link" href="https://devpost.com/benjamintli"><img alt="benjamintli" class="user-avatar user-photo photo_image image-replacement" title="benjamintli" onerror="this.onerror=null;this.src=&#39;https://devpost-challengepost.netdna-ssl.com/assets/defaults/no-avatar-100-17cf519ce6f8e4e0e83758ea09fc5eb3.png&#39;;" src="./ReviewChecker _ Devpost_files/profile.jpg"></a>
+
+          <a href="https://devpost.com/benjamintli">Benjamin Li</a>
+          started this project
+
+          <span class="light-text">
+            —
+            <a class="timestamp light-text" href="https://devpost.com/software/reviewchecker/updates/144164">
+              <time class="timeago" datetime="2018-05-26T18:38:21-04:00" title="May 26, 2018 06:38 PM EDT">56 days ago</time>
+</a>          </span>
+        </p>
+
+        <p><i>Leave feedback in the comments!</i></p>
+      </div>
+
+      <section class="software-update-comments" data-layout="comments">
+  <div data-region="load-more"></div>
+  <div data-region="comments"><ul class="no-bullet"></ul></div>
+
+      <p class="join-the-conversation">
+      <strong><a href="https://secure.devpost.com/users/login">Log in</a></strong>
+      or
+      <strong><a href="https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bcommentable_id%5D=144164&amp;flow%5Bname%5D=comment_on_software_update&amp;return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Freviewchecker">sign up for Devpost</a></strong>
+      to join the conversation.
+    </p>
+
+</section>
+
+    </div>
+    <div class="columns"></div>
+  </div>
+</article>
+
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+      
+    </section>
+
+    
+  <footer id="devpost-footer">
+  <div class="row">
+    <div class="small-6 large-3 columns">
+      <nav>
+        <h4>Devpost</h4>
+        <ul>
+          <li><a href="https://info.devpost.com/about">About</a></li>
+          <li><a href="https://info.devpost.com/careers">Careers</a></li>
+          <li><a href="https://info.devpost.com/contact">Contact</a></li>
+          <li><a href="https://help.devpost.com/">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="small-6 large-3 columns">
+      <nav>
+        <h4>Jobs</h4>
+        <ul>
+          <li><a href="https://devpost.com/jobs">Candidates</a></li>
+          <li><a href="https://devpost.com/jobs/hiring">Employers</a></li>
+          <li><a href="https://devpost.com/jobs/pricing">Pricing</a></li>
+          <li><a href="https://devpost.com/thecommit">Job advice</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <hr class="clear show-for-small">
+
+    <div class="small-6 large-3 columns">
+      <nav>
+        <h4>Hackathons</h4>
+        <ul>
+          <li><a href="https://devpost.com/hackathons">Browse hackathons</a></li>
+          <li><a href="https://devpost.com/software?ref_content=footer-projects-link&amp;ref_feature=projects&amp;ref_medium=footer">Explore projects</a></li>
+          <li><a href="https://post.devpost.com/hackathons">Host an in-person hackathon</a></li>
+          <li><a href="https://post.devpost.com/online_hackathons">Host an online hackathon</a></li>
+          <li><a href="https://post.devpost.com/app_contest_resources">Hackathon best practices</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="small-6 large-3 columns">
+      <nav>
+        <h4>Connect</h4>
+        <ul class="social-links">
+          <li>
+            <a href="https://twitter.com/devpost" target="_blank">
+              <i class="fa fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/devposthacks" target="_blank">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PLmJ41elIxG7bRbhhCUQun3e4XNeyKc_-o" target="_blank">
+              <i class="fa fa-youtube-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://devposthacks.tumblr.com/" target="_blank">
+              <i class="fa fa-tumblr-square"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="small-6 large-12 columns">
+      <nav id="site-footer-legal">
+        <h4 class="show-for-small">Legal</h4>
+        <ul>
+          <li><a href="https://info.devpost.com/privacy"><small>Privacy policy</small></a></li>
+          <li><a href="https://info.devpost.com/guidelines"><small>Community Guidelines</small></a></li>
+          <li><a href="https://info.devpost.com/terms"><small>Terms of service</small></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+    
+    <script src="./ReviewChecker _ Devpost_files/reimagine2-855b18a08e74a1a9ea9309268739429a.js.download"></script>
+<script src="./ReviewChecker _ Devpost_files/platform-717ea7e1f9ba991018467ba018cf4729.js.download"></script>
+
+<script src="./ReviewChecker _ Devpost_files/home_application-dc4498b4696554df87aade71ce5882b1.js.download"></script>
+
+<script>
+  var _gaq = _gaq || [];
+
+  (function () {
+
+
+    _gaq.push(["cp._setDomainName","devpost.com"]);
+    _gaq.push(["cp._setAccount","UA-2233558-21"]);
+    _gaq.push(["cp._setAllowLinker",true]);
+    _gaq.push(["cp._require","inpage_linkid","//www.google-analytics.com/plugins/ga/inpage_linkid.js"]);
+
+    
+
+    _gaq.push(["cp._trackPageview"]);
+  })();
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  (function() {
+    mixpanel.identify("ad5f9d1b278d46815d8026c9879fe12419db4d938dc7c1e2029a26f2b1ea9411b6908c277a55eed9ff7a891f0add6a53ae65");
+    mixpanel.register({"ref_feature":"engagement","ref_content":"contribution-prompt","ref_medium":"email"});
+  })();
+</script>
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+  var google_conversion_id = 999255338;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+/* ]]> */
+</script>
+
+<div style="display:none">
+  <script type="text/javascript" src="./ReviewChecker _ Devpost_files/f.txt">
+  </script>
+</div>
+
+<noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/999255338/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+
+
+  <script type="text/javascript">
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    var addthis_config = {
+      data_ga_property: "UA-2233558-21",
+      ui_508_compliant: true,
+      ui_use_addressbook: true,
+      ui_email_note: "I thought you might be interested in ReviewChecker - A website that leverages machine learning to determine whether a review on Google Maps is real or not. It was built with keras, python, javascript, and heroku.",
+      ui_email_from: ""
+    };
+    var addthis_share = {
+      url_transforms: {
+        shorten: {
+          twitter: 'bitly'
+        }
+      },
+      shorteners: {
+        bitly: {}
+      },
+      email_template: "software_share_template",
+      email_vars: {
+        Title: "ReviewChecker",
+        Subject: "Check out this project on Devpost",
+        HomepageLink: "https://devpost.com/?utm_campaign=friends_share&utm_medium=email"
+      },
+      passthrough : {
+        twitter: {
+          via: "Devpost",
+          text: "Check out ReviewChecker"
+        },
+        facebook: {
+          app_id: 115745995110194,
+          redirect_uri: https://devpost.com/software/reviewchecker
+        }
+      }
+    };
+  </script>
+  <script type="text/javascript" src="./ReviewChecker _ Devpost_files/addthis_widget.js.download"></script>
+
+
+
+<script type="text/javascript" charset="utf-8">
+  CP.env.addRoutes({
+    follows_url: "https://devpost.com/follows",
+    search_softwares_url: "https://devpost.com/software/search",
+    new_software_url: "https://devpost.com/software/new",
+    search_hackathons_url: "https://devpost.com/hackathons",
+    notifications_url: "https://devpost.com/notifications",
+    api: {
+      users_url: "https://api.devpost.com/users"
+    }
+  })
+
+  new Reimagine2();
+
+  $(function onDocumentReady() {
+      CP.Home.SoftwareCommentButton.setup();
+  CP.Home.ArrowKeyGalleryNavigation.setup('#gallery');
+  new CP.Home.EditableContribution('[data-contribution="editable-contribution"]')
+  CP.Mn.app.HackathonPicker.start({
+    software: {
+      id: 180188,
+      name: "ReviewChecker"
+    }
+  });
+  CP.Historic.setup(".software-updates");
+
+  ventChannel().trigger("updates:list", "reviewchecker");
+  CP.LinkCollectionTracker.setup(".recognized-tag a", "#app-details-right").track(
+    "Tag Gallery",
+    { "Tag displayed on": "software details page"}
+  );
+  new CP.Home.SoftwareLinks("[data-role=software-urls]").enhance();
+  CP.Home.DismissableMessage.setup("[data-alert]");
+  CP.ChallengeStateInfoTimeago.setup('#submissions');
+  CP.SendFormOnCommandEnter.setup($("#masqueradee"));
+  (function(inputs) {
+    if (typeof inputs.cp_autocomplete === "function") inputs.cp_autocomplete();
+    inputs.on('click', function(event) { return false; });
+  })($("#masqueradee"));
+var FollowButtonApp = new CP.FollowButtonApp({
+  user: {
+    id: 0,
+    screen_name: ""
+  },
+  urls: {
+    register_url: "https://secure.devpost.com/users/register",
+    user_follows_url: "https://devpost.com//follows"
+  }
+});
+
+FollowButtonApp.start();
+  var appOptions = {};
+
+
+  CP.Mn.app.start(appOptions);
+
+  });
+
+</script>
+
+<!--[if lt IE 9 ]>
+  <script type="text/javascript">
+    $(function onDocumentReady() {
+      CP.IE.Notifications.setup();
+    });
+  </script>
+<![endif]-->
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://devpost.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://devpost.com/software/search?query={query}",
+      "query-input": "name=query"
+    }
+}
+</script>
+
+<script src="./ReviewChecker _ Devpost_files/oct.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+  if (typeof(twttr) !== "undefined") {
+    twttr.conversion.trackPid('l6ngp', { tw_sale_amount: 0, tw_order_quantity: 0 });
+  }
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6ngp&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6ngp&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+</noscript>
+
+
+
+    
+
+
+</body></html>
