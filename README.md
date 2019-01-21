@@ -1,7 +1,7 @@
 # TOHacks
 
 ---
-Created for TOHacks 2018's 12-hour Hackathon in collaboration with:
+Created for TOHacks2018's 12-hour Hackathon in collaboration with:
 
 - Benjamin Li  ([@benjamintli](https://github.com/benjamintli))
 
