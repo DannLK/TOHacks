@@ -3,8 +3,6 @@
 ---
 Created for TOHacks2018 Hackathon in collaboration with:
 
-- Daniel Lok ([@DannLK](https://github.com/DannLK))
-
 - Benjamin Li  ([@benjamintli](https://github.com/benjamintli))
 
 - Jonathan Stroz ([@15jas11](https://github.com/15jas11))
