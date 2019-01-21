@@ -5,11 +5,11 @@ Created for TOHacks2018 Hackathon in collaboration with:
 
 - Daniel Lok ([@DannLK](https://github.com/DannLK))
 
-- Benjamin Li  ([@benjamintli] (https://github.com/benjamintli))
+- Benjamin Li  ([@benjamintli](https://github.com/benjamintli))
 
-- Jonathan Stroz ([@15jas11] (https://github.com/15jas11))
+- Jonathan Stroz ([@15jas11](https://github.com/15jas11))
 
-- Levi Stringer ([@levistringer] (https://github.com/levistringer))
+- Levi Stringer ([@levistringer](https://github.com/levistringer))
 ---
 
 This website allows users to search for locations on google maps and check whether the reviews are real or not. It does this by running the reviews against a machine learning classifier, which outputs the polarity (i.e. real or fake) and the percent accuracy of that.
